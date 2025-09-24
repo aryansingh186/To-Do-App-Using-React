@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="main-container">
       <div className="center-container">
-        <h1>Todo App</h1>
+        <h1>Todo App</h1> 
         <TodoInput addlist={addList} />
 
         <div className="section">
@@ -53,7 +53,7 @@ function App() {
             <TaskCard
               key={i}
               item={item}
-              index={listTodo.indexOf(item)} // correct index from original list
+              index={listTodo.indexOf(item)}
               toggleDone={toggleDone}
               deleteItem={deleteItem}
             />
@@ -87,3 +87,4 @@ function TaskCard({ item, index, toggleDone, deleteItem }) {
 }
 
 export default App;
+
